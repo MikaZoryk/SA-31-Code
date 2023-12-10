@@ -1,0 +1,287 @@
+/* Загальні стилі для сторінки */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Стилі для заголовка "Реєстрація" */
+#reg {
+  padding: 70px;
+}
+
+/* Стилі для навігаційної панелі */
+.w3-top {
+  background-color: #b3b3ff;
+}
+
+.w3-bar {
+  padding: 15px;
+}
+
+.w3-bar-item {
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.w3-bar-item:hover {
+  background-color: #b5a5cc;
+}
+
+/* Стилі для заголовка */
+.header {
+  text-align: center;
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.header button {
+  background-color: #9c8cbb;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+/* Стилі для першої сітки */
+.w3-row-padding {
+  margin: 0 -16px;
+}
+
+.w3-twothird {
+  padding: 20px;
+}
+
+.w3-twothird h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.w3-twothird h5 {
+  margin-bottom: 20px;
+}
+
+.w3-twothird p {
+  margin-bottom: 30px;
+}
+
+.w3-third img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Додавання колірного тексту для посилань */
+a {
+  color: black;
+}
+
+/* Стилі для відвіданих посилань */
+a:visited {
+  color: black;
+}
+
+/* Стилі для посилань при наведенні */
+a:hover {
+  color: #3366cc;
+}
+
+/* Стилі для активних/фокусних посилань */
+a:active,
+a:focus {
+  color: #3366cc;
+}
+
+/* Стилі для футера */
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* Стилі для списку посилань у футері */
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+/* Стилі для посилань у футері */
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* Стилі для копірайту */
+.copyright-text {
+  margin: 0;
+}
+
+/* Медіа-запит для ширини екрану до 991 пікселів */
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+
+/* Медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+/* Додатковий медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+/* Стилі для форми реєстрації */
+.container_reg {
+  padding: 40px;
+}
+
+/* Стилі для форми */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container_reg h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Стилі для кнопки "Зареєструватись" */
+.registerbtn {
+  background-color: #7f4ce6;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Стилі для секції "Вже зареєстровані" */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Стилі для розкривного списку */
+.w3-dropdown-click .w3-button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: left;
+  width: 200px;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.w3-dropdown-content label {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.w3-dropdown-content input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.w3-dropdown-click:hover .w3-button {
+  background-color: #ddd;
+}

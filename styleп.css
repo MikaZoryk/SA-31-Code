@@ -1,0 +1,250 @@
+
+body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif;
+            }
+        h1{
+            padding: 40px;
+        }
+           .header {
+            background-color: #7f4ce6;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif;
+        }
+
+ .w3-bar {
+            background-color: #b3b3ff !important;
+            color: #fff !important;
+        }
+
+        .w3-bar a {
+            padding: 12px;
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+
+        .w3-bar a:hover {
+            background-color: ##b3b3ff;
+        }
+
+        .w3-button {
+            background-color: ##b3b3ff;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .w3-button:hover {
+            background-color: ##b3b3ff;
+        }
+        
+/* Additional styling for the genetic testing services page */
+.services h1 {
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dfd2f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    transition: transform 0.3s;
+    width: 50%;
+}
+
+.service-item img {
+    width: 60%;
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7f4ce6; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-item .button:hover {
+    background-color: #dfd2f9; /* Change the background color on hover */
+}
+
+.specialist-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7f4ce6; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.specialist-info .button:hover {
+    background-color: #dfd2f9; /* Change the background color on hover */
+}
+
+.service-item h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.specialist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dfd2f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    transition: transform 0.3s;
+    width: 50%;
+}
+
+.specialist-info img {
+    max-width: 60%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.specialist-info:hover {
+    transform: scale(1.05);
+}
+
+/* Add hover effect for "Обрати фахівця" button */
+.specialist-info button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Стилі для футера */
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* Стилі для списку посилань у футері */
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+/* Стилі для посилань у футері */
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* Стилі для копірайту */
+.copyright-text {
+  margin: 0;
+}
+
+/* Медіа-запит для ширини екрану до 991 пікселів */
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+
+/* Медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+/* Додатковий медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+ 

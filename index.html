@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- Тип документу - HTML -->
+<html lang="en"> <!-- Мова сайту: англійська -->
+<head>
+    <meta charset="UTF-8"> <!-- Кодування символів: UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Налаштування масштабу для адаптивності на різних пристроях -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Підключення стилів від W3Schools -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Підключення шрифту Lato з Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Підключення шрифту Montserrat з Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Підключення іконок Font Awesome -->
+
+    <title>PatientPortal - Система прийняття рішень в галузі медичної генетики</title> <!-- Заголовок сторінки -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Підключення стилів Bootstrap -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Підключення власних стилів -->
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-card  w3-large">
+        <a href="index.html" class="w3-bar-item w3-button">Головна</a> <!-- Пункт меню - Головна -->
+        <a href="services.html" class="w3-bar-item w3-button">Послуги</a> <!-- Пункт меню - Послуги -->
+        <a href="specialisthelp.html" class="w3-bar-item w3-button">Для Фахівців</a> <!-- Пункт меню - Для Фахівців -->
+        <a href="patient.html" class="w3-bar-item w3-button">Для Пацієнтів</a> <!-- Пункт меню - Для Пацієнтів -->
+        <a href="patient.html#about" class="w3-bar-item w3-button">Про нас</a>
+        <!-- Пункт меню - Про нас -->
+        <a href="patient.html#reviews" class="w3-bar-item w3-button">Відгуки</a>
+        <!-- Пункт меню - Контакти -->
+        <a href="patient.html#contacts" class="w3-bar-item w3-button">Контакти</a>
+         <!-- Пункт меню - Відгуки -->
+        <a href="autorize.html" class="w3-bar-item w3-button w3-right-align">Авторизація</a> <!-- Пункт меню - Авторизація -->
+        <a href="registration.html" class="w3-bar-item w3-button w3-right-align">Реєстрація</a> <!-- Пункт меню - Реєстрація -->
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+    <h1 class="w3-margin w3-jumbo">PatientPortal - система прийняття рішень в галузі медичної генетики</h1> <!-- Заголовок шапки сторінки -->
+    <br>
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="redirectToRegistration()">Розпочнімо!</button> <!-- Кнопка "Розпочнімо!" -->
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <!-- Текст ліворуч -->
+        <div class="w3-twothird">
+            <h1>Patient Portal</h1> <!-- Заголовок розділу -->
+            <h5 class="w3-padding-32">“Patient Portal” - це інноваційна система прийняття рішень в галузі медичної генетики, яка забезпечує ефективне використання генетичних даних для покращення діагностики та лікування хвороб.</h5> <!-- Підзаголовок розділу -->
+            <p class="w3-text-grey">
+                <!-- Деталі про систему та її використання -->
+            </p>
+        </div>
+
+        <!-- Зображення праворуч -->
+        <div class="w3-third">
+            <img src="decis.jpg" alt="systemdec"> <!-- Зображення системи прийняття рішень в галузі медичної генетики -->
+        </div>
+    </div>
+</div>
+
+<!-- Футер -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Про сайт -->
+            <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify"> “Patient Portal” - це важливий крок вперед у використанні генетики для покращення здоров’я людей. Ця система відкриває нові можливості для розуміння, діагностики та лікування генетичних хвороб</p>
+            </div>
+        </div>
+
+        <!-- Швидкі посилання -->
+        <div class="col-xs-6 row-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+                <!-- Посилання на різні сторінки сайту -->
+                <li><a href="index.html" class="w3-bar-item ">Головна</a></li> 
+             <li><a href="services.html" class="w3-bar-item ">Послуги</a></li>
+            <li><a href="#" class="w3-bar-item ">Для Фахівців</a></li>
+            <li><a href="#" class="w3-bar-item ">Для Пацієнтів</a></li>
+            <li><a href="w3-twothird" class="w3-bar-item">Про нас</a></li>
+            <li><a href="#" class="w3-bar-item "> Контакти</a></li>
+            <li><a href="#" class="w3-bar-item ">Відгуки</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Копірайт -->
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2023 Всі права захищені</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Підключення скриптів Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Загальні стилі для body */
+body {
+  font-family: 'Lato', sans-serif; /* Встановлення шрифту для тексту */
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.6; /* Висота рядка */
+  color: #333; /* Колір тексту */
+  background-color: #f8f9fa; /* Колір фону */
+}
+
+/* Адаптація для екранів шириною до 600 пікселів */
+@media screen and (max-width: 600px) {
+    .w3-top {
+        position: static; /* Змінено положення бару на статичне для коректного відображення на малих екранах */
+    }
+
+    .w3-bar-item {
+        width: 100%; /* Розширення елементів бару на весь екран */
+        text-align: center; /* Вирівнювання тексту по центру */
+    }
+
+    .w3-twothird, .w3-third {
+        width: 100%; /* Розширення текстового та зображеннєвого блоків на весь екран */
+        margin: 0; /* Знято відступи */
+    }
+
+    .w3-third img {
+        width: 100%; /* Розширення зображення на весь блок */
+    }
+}
+
+/* Стилі для Navbar */
+.w3-top {
+  background-color: #b3b3ff; /* Колір фону бару */
+}
+
+.w3-bar {
+  padding: 15px; /* Зовнішні відступи бару */
+}
+
+.w3-bar-item {
+  padding: 8px 16px; /* Зовнішні відступи пунктів меню */
+  color: #fff; /* Колір тексту пунктів меню */
+  text-decoration: none; /* Відміна декорації тексту (підкреслення) */
+}
+
+.w3-bar-item:hover {
+  background-color: #b5a5cc; /* Колір фону при наведенні */
+}
+    /* Форма та кнопка */
+    #diagnosisForm {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px #ccc;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #635d7c; /* Dark Lavender Purple */
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    /* Результати діагнозу */
+    #diagnosisResult {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #d8d1e4; /* Light Lavender Purple */
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+        color: #5d5b6d; /* Dark Grayish Lavender */
+    }
+
+    /* Стилі для Footer */
+.site-footer {
+  background-color: #26272b; /* Колір фону футера */
+  padding: 45px 0 20px; /* Внутрішні відступи футера */
+  font-size: 15px; /* Розмір тексту футера */
+  line-height: 24px; /* Висота рядка тексту футера */
+  color: #737373; /* Колір тексту футера */
+}
+
+.site-footer hr {
+  border-top-color: #bbb; /* Колір верхньої межі лінії розділення */
+  opacity: 0.5; /* Прозорість лінії розділення */
+}
+
+.site-footer hr.small {
+  margin: 20px 0; /* Зовнішні відступи для меншої лінії розділення */
+}
+
+.site-footer h6 {
+  color: #fff; /* Колір тексту заголовку */
+  font-size: 16px; /* Розмір тексту заголовку */
+  text-transform: uppercase; /* Перетворення тексту в верхній регістр */
+  margin-top: 5px; /* Зовнішні відступи заголовку */
+  letter-spacing: 2px; /* Міжлітерні відступи заголовку */
+}
+
+.site-footer a {
+  color: #737373; /* Колір тексту посилань */
+}
+
+.site-footer a:hover {
+  color: #3366cc; /* Колір тексту посилань при наведенні */
+  text-decoration: none; /* Відміна декорації тексту (підкреслення) */
+}
+
+/* Стилі для соціальних іконок та посилань */
+.footer-links{
+  padding-left: 0; /* Зовнішні відступи списків */
+  list-style: none; /* Відміна маркерів списку */
+}
+
+.footer-links li {
+  display: block; /* Блочний тип відображення елементів списку */
+}
+
+.footer-links.inline li {
+  display: inline-block; /* Відображення елементів в ряду */
+}
+/* Стилі для посилань у футері */
+.footer-links a {
+  color: #737373; /* Колір звичайних посилань */
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc; /* Колір посилань при наведенні або активізації */
+  text-decoration: none; /* Зняття декорації тексту посилань при наведенні або активізації */
+}
+
+/* Стилі для копірайту */
+.copyright-text {
+  margin: 0; /* Зняття відступів від копірайту */
+}
+
+/* Медіа-запит для ширини екрану до 991 пікселів */
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px; /* Додатковий відступ між колонками у футері */
+  }
+}
+
+/* Медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0; /* Зняття нижнього відступу у футері при малих екранах */
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center; /* Вирівнювання тексту копірайту та соціальних іконок по центру на малих екранах */
+  }
+}
+
+/* Додатковий медіа-запит для ширини екрану до 767 пікселів */
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block; /* Показ заголовка "Social Icons" як окремого блоку на малих екранах */
+    margin-right: 0; /* Зняття правого відступу для заголовка */
+    font-weight: 600; /* Задання жирного шрифта для заголовка */
+  }
+}
+
