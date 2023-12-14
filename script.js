@@ -130,53 +130,36 @@ function chooseService(service) {
 function getDiagnosis() {
     // Отримання даних з форми
     var symptoms = document.getElementById('symptoms').value.toLowerCase(); // перетворення на нижній регістр
-
+    
     // Перевірка наявності конкретних симптомів
     var diagnosis = "Не вдалося визначити діагноз"; // за замовчуванням
 
-    // Поділ симптомів на масив
-    var symptomArray = symptoms.split(',').map(symptom => symptom.trim());
-
-    // Діагноз 1
-    if (symptomArray.includes('головний біль') && symptomArray.includes('температура')) {
-        diagnosis = "Можливо, це Мігрень";
-    }
-
-    // Діагноз 2
-    else if (symptomArray.includes('температура') && symptomArray.includes('кашель')) {
-        diagnosis = "Можливо, це Грип";
-    }
-
-    // Діагноз 3
-    else if (symptomArray.includes('температура') && symptomArray.includes('втрата запаху')) {
-        diagnosis = "Можливо, це COVID-19";
-    }
+    if (symptoms.includes('пігметні плями') && symptoms.includes('дисплазія кісток')) {
+        diagnosis = "Можливо, це Нейрофіброматоз";
+    } else if (symptoms.includes('анемія') && symptoms.includes('збільшена селезінка')) {
+        diagnosis = "Можливо, це Гоше";
+    } // додайте інші умови для різних діагнозів
 
     // Виведення результатів
     var resultContainer = document.getElementById('diagnosisResult');
-
-    // Real related articles based on the diagnosis
+    
+    // Real related articles
     var articles = [];
+    if (diagnosis === "Можливо, це Нейрофіброматоз") {
+        articles = [
+            { title: 'Understanding Neurofibromatosis', link: 'https://www.nfnetwork.org/understanding-nf/' }
+            // Додайте інші статті для Нейрофіброматозу
+        ];
+    } else if (diagnosis === "Можливо, це Гоше") {
+        articles = [
+            { title: 'Gaucher Disease Overview', link: 'https://ghr.nlm.nih.gov/condition/gaucher-disease' }
+            // Додайте інші статті для Гоше
+        ];
+    } // додайте блоки else if для інших діагнозів
 
-    if (diagnosis === "Можливо, це Мігрень") {
-        articles = [
-            { title: 'Understanding Migraine Symptoms', link: 'https://www.migrainetrust.org/symptoms/' },
-            { title: 'Migraine Research Foundation', link: 'https://migraineresearchfoundation.org/' }
-        ];
-    } else if (diagnosis === "Можливо, це Грип") {
-        articles = [
-            { title: 'CDC Guide to Influenza (Flu)', link: 'https://www.cdc.gov/flu/index.htm' }
-        ];
-    } else if (diagnosis === "Можливо, це COVID-19") {
-        articles = [
-            { title: 'COVID-19 Symptoms and Testing', link: 'https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html' },
-            { title: 'COVID-19 Research Papers', link: 'https://www.ncbi.nlm.nih.gov/pmc/?term=covid-19' }
-        ];
-    }
-
-    // Real research (common for all diagnoses)
+    // Real research
     var research = [
-        { title: 'General Medical Research', link: 'https://www.ncbi.nlm.nih.gov/pmc/' }
+        { title: 'Genetic Disorders Research', link: 'https://www.genome.gov/health/all-about-genomics' }
     ];
 
     // Display results
@@ -195,5 +178,3 @@ function generateLinks(data) {
     result += '</ul>';
     return result;
 }
-
-
